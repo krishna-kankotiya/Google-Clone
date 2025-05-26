@@ -1,0 +1,134 @@
+/* Basic reset and styles as before */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  cursor: url('https://cdn.iconscout.com/icon/free/png-256/cursor-1722007-1462105.png'), auto;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.container {
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.logo {
+  width: 150px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.search-input {
+  width: 80%;
+  max-width: 500px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  outline: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 8px rgba(66, 133, 244, 0.5);
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  background: linear-gradient(
+    90deg,
+    #4285f4,   /* Google Blue */
+    #ea4335,   /* Google Red */
+    #fbbc05,   /* Google Yellow */
+    #34a853    /* Google Green */
+  );
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+#themeToggle {
+    position: absolute;        /* Fixed at top-right */
+    top: 20px;                 /* Adjust spacing */
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/021/013/589/original/click-touch-icon-isolated-on-transparent-background-free-png.png');
+    background-size: cover;
+    background-position: center;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#themeToggle:hover {
+    transform: scale(1.1);
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode a {
+    color: white;
+}
+
+#voiceSearch {
+  background-image: url('https://vivorajasthan.com/storage/media/29lus53QfidAC72RIc19kAlhlUPixP6rrVF1VYUh.jpeg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  width: 41px;
+  height: 43px;
+  transition: transform 0.2s;
+}
+
+#voiceSearch.listening {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(255, 0, 0, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
+}
+
+.top-nav {
+    position: absolute;   /* Fixed at top-left */
+    top: 20px;            /* Adjust spacing */
+    left: 20px;
+}
+a{
+  color: black;
+}
+
+.top-nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.googly-msg{
+  margin-top: 150px;
+  padding-bottom: 50px;
+}

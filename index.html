@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Google Clone - Voice Search with Pulse</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="top-nav">
+    <a href="https://about.google/?fg=1&utm_source=google-IN&utm_medium=referral&utm_campaign=hp-header">About</a>
+    <a href="https://store.google.com/in/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-IN&pli=1">Store</a>
+  </div>
+  <button id="themeToggle"></button>
+  <div class="container">
+    <img src="https://logos-world.net/wp-content/uploads/2020/09/Google-Logo.png" alt="Google Logo" class="logo">
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+      <div class="search-container">
+        <input type="text" name="q" placeholder="Search Google" class="search-input" id="searchInput">
+        <button type="button" id="voiceSearch"></button>
+      </div>
+      <div class="buttons">
+        <button type="submit" id="searchBtn"><i class="fas fa-search"></i> Search the Web</button>
+        <button type="button" id="luckyBtn" onclick="window.location.href='https://doodles.google/'">Discover Something New</button>
+      </div>
+      <div class="googly-msg">
+        💥 <span id="googlyText">Your adventure starts here!</span>
+      </div>
+      <div class="languages">
+        Google offered in:
+        <a href="#" data-lang="hi">हिन्दी,</a>
+        <a href="#" data-lang="en">English,</a>
+        <a href="#" data-lang="gu">ગુજરાતી,</a>
+        <a href="#" data-lang="bn">বাংলা,</a>
+        <a href="#" data-lang="ta">தமிழ்,</a>
+        <a href="#" data-lang="kn">ಕನ್ನಡ,</a>
+        <a href="#" data-lang="ml">മലയാളം,</a>
+        <a href="#" data-lang="pa">ਪੰਜਾਬੀ</a>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
